@@ -9,6 +9,7 @@ import signUpModel from "../models/signUpModel.js";
 const router = express.Router()
 
 
+//SignUP Route Controller 
   export const signUp = async (req, res) => {
       const {fullname , email, password , profilePhoto} = req.body;
       try{
@@ -21,14 +22,11 @@ const router = express.Router()
             roles: "admin"
         })
 
-          //Validation
+         //Validation
         //Database query
         //Auth middleware
-
-
+        //Error Handler
         console.log(req)
-
-
         // await newSignUpModel.save()
           
       }catch(error){

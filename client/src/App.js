@@ -3,7 +3,7 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Contact from "./components/Contact";
-import Documents from "./components/Documents";
+import BuySection from "./components/BuySection";
 import Ecosystems from "./components/Ecosystems";
 import FAQPage from "./components/FAQPage";
 import Footer from "./components/Footer";
@@ -69,9 +69,6 @@ function App() {
         </Route>
       </Switch>
       <Footer />
-      {/* <div className="nk-ovm nk-ovm-repeat nk-ovm-fixed shape-i">
-          <div className="ovm-line"></div>
-        </div> */}
       <RegisterPopup />
       <RegisterPopup />
     </Router>
@@ -79,3 +76,7 @@ function App() {
 }
 
 export default App;
+
+{/* <div className="nk-ovm nk-ovm-repeat nk-ovm-fixed shape-i">
+    <div className="ovm-line"></div>
+  </div> */}

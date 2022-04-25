@@ -1,6 +1,6 @@
 import React from "react";
 
-function Documents() {
+function BuySection() {
   return (
     <main className="nk-pages tc-light">
     <section className="section py-5" id="docs">
@@ -136,4 +136,4 @@ function Documents() {
   );
 }
 
-export default Documents;
+export default BuySection;

@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+//Mongoose Schema Model SignUp
 const signup = mongoose.Schema({
   fullname: {type:String, required: true},
   email: {type:String, required: true},

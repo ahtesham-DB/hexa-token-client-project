@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import BoardMember from "./BoardMember";
 import Contact from "./Contact";
-import Documents from "./Documents";
+import BuySection from "./BuySection";
 import Ecosystems from "./Ecosystems";
 import FAQPage from "./FAQPage";
 import Footer from "./Footer";
@@ -24,7 +24,7 @@ function HomePage() {
         <Ecosystems />
         <Platform />
         <MvpPage />
-        <Documents />
+        <BuySection />
         <PressNews />
         <FAQPage />
         <Contact /> 
