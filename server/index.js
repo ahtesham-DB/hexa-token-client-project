@@ -18,7 +18,7 @@ app.use(bodyParser.json({limit: "16mb", extended: true}))
 app.use(cors())
 
 
-// sperte All ROuter Codes From server connect code 
+// separate  All ROuter Codes From server connect code 
 app.use("/", router);
 
 
