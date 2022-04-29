@@ -3,19 +3,23 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import "dotenv/config";
-
-
 import router from "./routes/routes.js";
 
 //Default PORT 3005 or Hosting provide PORT
 const PORT = process.env.PORT || 3005;
 
+const corsOptions ={
+  origin:'http://localhost:3000', 
+  credentials:true,            //access-control-allow-credentials:true
+  optionSuccessStatus:200
+}
+
 
 //setUp Express Js Web server 
 const app = express()
+app.use(cors(corsOptions))
 app.use(bodyParser.urlencoded({limit: "16mb", extended: true}))
 app.use(bodyParser.json({limit: "16mb", extended: true}))
-app.use(cors())
 
 
 // separate  All ROuter Codes From server connect code 

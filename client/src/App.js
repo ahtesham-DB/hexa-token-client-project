@@ -7,7 +7,7 @@ import BuySection from "./components/BuySection";
 import Ecosystems from "./components/Ecosystems";
 import FAQPage from "./components/FAQPage";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Header from "./components/headerComponents/Header";
 import ModelLoginPopup from "./components/ModelLoginPopup";
 import MvpPage from "./components/MvpPage";
 import Platform from "./components/Platform";
@@ -15,19 +15,19 @@ import PressNews from "./components/PressNews";
 import RegisterPopup from "./components/RegisterPopup";
 import RoadMap from "./components/RoadMap";
 import Card from "./components/Card";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/headerComponents/NavBar";
 import { useState } from "react";
 import TokenPage from "./components/TokenPage";
 import TeamPage from "./components/TeamPage";
 import RoadMapPage from "./components/RoadMapPage";
 import Blog from "./components/Blog";
-import Banner from "./components/Banner";
+import Banner from "./components/headerComponents/Banner";
 import TeamPageNew from "./components/TeamPageNew";
 import Community from "./components/Community";
 import TeamPageNewSection from "./components/TeamPageNewSection";
 import BlogCardPage from "./components/BlogCardPage";
-import SignUpPage from "./components/SignUpPage";
-import SignInPage from "./components/SignInPage";
+import SignUpPage from "./components/authComponents/SignUpPage";
+import SignInPage from "./components/authComponents/SignInPage";
 
 function App() {
   const [modelOpen, setModelOpen] = useState(false);
@@ -36,7 +36,7 @@ function App() {
       <Header setModelOpen={setModelOpen} />
       <Switch>
         <Route exact path="/home">
-          <Banner />
+          {/* <Banner /> */}
           <HomePage />
         </Route>
         <Route exact path="/blogs">

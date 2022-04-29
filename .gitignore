@@ -1,0 +1,35 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+server/node_modules
+server/.env
+
+# dependencies
+clinet//node_modules
+clinet//.pnp
+clinet/.pnp.js
+
+# testing
+clinet//coverage
+
+# production
+clinet//build
+clinet//Backup Files
+clinet//build 12-04-2022
+clinet//build 20-04-2022
+clinet//build 21-04-2022
+clinet//build 14042022
+clinet//build 22042022
+clinet//gitToUpload
+
+
+
+# misc
+clinet/.clinet/DS_Store
+clinet/.env.local
+clinet/.env.development.local
+clinet/.env.test.local
+clinet/.env.production.local
+
+clinet/npm-debug.log*
+clinet/yarn-debug.log*
+clinet/yarn-error.log*

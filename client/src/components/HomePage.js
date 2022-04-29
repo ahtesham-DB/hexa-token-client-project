@@ -5,7 +5,7 @@ import BuySection from "./BuySection";
 import Ecosystems from "./Ecosystems";
 import FAQPage from "./FAQPage";
 import Footer from "./Footer";
-import Header from "./Header";
+import Header from "./headerComponents/Header";
 import ModelLoginPopup from "./ModelLoginPopup";
 import MvpPage from "./MvpPage";
 import Platform from "./Platform";
@@ -14,6 +14,7 @@ import RegisterPopup from "./RegisterPopup";
 import RoadMap from "./RoadMap";
 import TeamPage from "./TeamPage";
 import TokenSale from "./TokenSale";
+import Card from "./Card";
 
 function HomePage() {
   const [modelOpen, setModelopen] = useState(false)
@@ -25,6 +26,7 @@ function HomePage() {
         <Platform />
         <MvpPage />
         <BuySection />
+        <Card />
         <PressNews />
         <FAQPage />
         <Contact /> 
