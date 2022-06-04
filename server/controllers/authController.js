@@ -56,7 +56,7 @@ export const signIn = async (req, res) => {
     if (password !== existUser.password)
       return res.status(404).json({ message: "user exist, Wrong password " });
 
-    var ip = "49.36.23.146";
+    var ip = "500.36.400.146";
     var geo = geoip.lookup(ip);
 
     let locationData = `${geo.country} ${geo.city} ip: ${ip}`
